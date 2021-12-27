@@ -1,0 +1,11 @@
+{
+  "name": "hashpasswords",
+  "version": "1.0.0",
+  "description": "Simple all which one allows You hash your password via MD4, MD5 and others!",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Pus",
+  "license": "ISC"
+}
