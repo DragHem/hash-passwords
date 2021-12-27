@@ -66,3 +66,14 @@ main {
     }
   }
 }
+
+@media (min-width: 368px) {
+  main {
+    input {
+      font-size: 1em;
+    }
+    select {
+      font-size: 1em;
+    }
+  }
+}

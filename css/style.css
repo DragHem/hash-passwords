@@ -81,4 +81,13 @@ main .output button {
 main .output button:hover {
   background-color: #eee;
 }
+
+@media (min-width: 368px) {
+  main input {
+    font-size: 1em;
+  }
+  main select {
+    font-size: 1em;
+  }
+}
 /*# sourceMappingURL=style.css.map */

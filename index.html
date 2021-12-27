@@ -13,11 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="manifest" href="./manifest.json" />
   </head>
   <body>
     <main>
       <h1></h1>
-
       <div>
         <input type="text" class="password" placeholder="Password..." />
         <select name="hash" id="hash" for="hash">
@@ -27,6 +27,7 @@
           <option value="sha2">SHA2</option>
         </select>
       </div>
+
       <div class="output">
         <input type="text" class="hash" placeholder="Hash..." readonly />
         <button>Copy</button>
@@ -35,5 +36,14 @@
 
     <script type="text/javascript" src="bundle.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script>
+      if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("/sw.js").then(function (reg) {
+          console.log(
+            "Service worker has been registered for scope: " + reg.scope
+          );
+        });
+      }
+    </script>
   </body>
 </html>
