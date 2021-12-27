@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+main h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  max-width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main input {
+  padding: 20px;
+  border: none;
+  background-color: #ccc;
+  font-size: 1.5em;
+}
+
+main select {
+  border: none;
+  background-color: #ddd;
+  font-size: 1.5em;
+  padding: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main select:hover {
+  background-color: #eee;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .output input {
+  font-size: 1em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px;
+}
+
+main .output button {
+  border: none;
+  padding: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #ddd;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .output button:hover {
+  background-color: #eee;
+}
+/*# sourceMappingURL=style.css.map */
